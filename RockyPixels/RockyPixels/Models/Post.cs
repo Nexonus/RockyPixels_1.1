@@ -1,35 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace RockyPixels.Models;
 
 public partial class Post
 {
-    public int PostId { get; set; }
-
-    public int? UserId { get; set; }
+    public int Id { get; set; }
 
     public string? Topic { get; set; }
 
+    [DisplayName("Content")]
     public string? PostContent { get; set; }
 
-    public DateTime CreateDate { get; set; }
+    [DisplayName("Creation Date")]
+    public DateTime CreatedOn { get; set; }
 
-    public DateTime? EditDate { get; set; }
+    [DisplayName("Modification Date")]
+    public DateTime? LastModifiedOn { get; set; }
 
-    public DateTime? DeleteDate { get; set; }
-
-    public int? CategoryId { get; set; }
-
-    public int? TagId { get; set; }
-
-    public int? AttachmentId { get; set; }
-
-    public virtual PostDatum? Attachment { get; set; }
-
-    public virtual Category? Category { get; set; }
-
-    public virtual Tag? Tag { get; set; }
+    public int UserId { get; set; }
 
     public virtual User? User { get; set; }
 }

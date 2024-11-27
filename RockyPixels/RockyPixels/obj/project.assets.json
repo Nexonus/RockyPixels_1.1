@@ -11661,11 +11661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixels_1.1\\RockyPixels\\RockyPixels\\RockyPixels.csproj",
+      "projectUniqueName": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\RockyPixels.csproj",
       "projectName": "RockyPixels",
-      "projectPath": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixels_1.1\\RockyPixels\\RockyPixels\\RockyPixels.csproj",
+      "projectPath": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\RockyPixels.csproj",
       "packagesPath": "C:\\Users\\Jan Konarski\\.nuget\\packages\\",
-      "outputPath": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixels_1.1\\RockyPixels\\RockyPixels\\obj\\",
+      "outputPath": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jan Konarski\\AppData\\Roaming\\NuGet\\NuGet.Config",

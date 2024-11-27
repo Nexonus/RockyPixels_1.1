@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HOplGJHHrwpvIRlIdhbRDu/ghnUc4b56uFo5yrxvBpxY9xf8Grx7WtkRwXyqkqfTf4jmTX7LavyLnlJdJcnCkQ==",
+  "dgSpecHash": "JLWpD+po1FjxzZEZC+3/euFsfhWLg20bDU2RqElnhDNY6MP0pErrr4bAwpRUwUKsWBmOX4PuavefImEXRESf0w==",
   "success": true,
-  "projectFilePath": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixels_1.1\\RockyPixels\\RockyPixels\\RockyPixels.csproj",
+  "projectFilePath": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\RockyPixels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jan Konarski\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Jan Konarski\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
