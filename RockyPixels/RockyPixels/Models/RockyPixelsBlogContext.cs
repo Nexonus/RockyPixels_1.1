@@ -15,7 +15,13 @@ public partial class RockyPixelsBlogContext : DbContext
     {
     }
 
+    public virtual DbSet<Image> Images { get; set; }
+
     public virtual DbSet<Post> Posts { get; set; }
+
+    public virtual DbSet<Role> Roles { get; set; }
+
+    public virtual DbSet<Tag> Tags { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
@@ -25,12 +31,24 @@ public partial class RockyPixelsBlogContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Image>(entity =>
+        {
+            entity.ToTable("Images", "RockyPixels");
+
+            entity.Property(e => e.ImageId)
+                .ValueGeneratedNever()
+                .HasColumnName("ImageID");
+        });
+
         modelBuilder.Entity<Post>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Posts__AA126038F22F0577");
 
+            entity.ToTable("Posts", "RockyPixels");
+
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.CreatedOn).HasColumnType("datetime");
+            entity.Property(e => e.ImageId).HasColumnName("ImageID");
             entity.Property(e => e.LastModifiedOn).HasColumnType("datetime");
             entity.Property(e => e.PostContent)
                 .HasMaxLength(1000)
@@ -40,29 +58,61 @@ public partial class RockyPixelsBlogContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
+            entity.HasOne(d => d.Image).WithMany(p => p.Posts)
+                .HasForeignKey(d => d.ImageId)
+                .HasConstraintName("FK_Posts_Images");
+
             entity.HasOne(d => d.User).WithMany(p => p.Posts)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Posts_Users");
         });
 
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.HasKey(e => e.RoleId).HasName("PK_Roles_1");
+
+            entity.ToTable("Roles", "RockyPixels");
+
+            entity.Property(e => e.RoleId)
+                .ValueGeneratedNever()
+                .HasColumnName("RoleID");
+            entity.Property(e => e.Name)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Tag>(entity =>
+        {
+            entity.ToTable("Tags", "RockyPixels");
+
+            entity.Property(e => e.TagId)
+                .ValueGeneratedNever()
+                .HasColumnName("TagID");
+            entity.Property(e => e.Value)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
         modelBuilder.Entity<User>(entity =>
         {
             entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC6F234955");
 
+            entity.ToTable("Users", "RockyPixels");
+
             entity.Property(e => e.UserId)
                 .ValueGeneratedNever()
                 .HasColumnName("UserID");
-            entity.Property(e => e.IconPath)
-                .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.Name)
-                .HasMaxLength(255)
-                .IsUnicode(false);
+            entity.Property(e => e.Avatar).HasColumnType("image");
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
-            entity.Property(e => e.Surname)
+            entity.Property(e => e.Username)
                 .HasMaxLength(255)
                 .IsUnicode(false);
+
+            entity.HasOne(d => d.Role).WithMany(p => p.Users)
+                .HasForeignKey(d => d.RoleId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Users_Roles");
         });
 
         OnModelCreatingPartial(modelBuilder);

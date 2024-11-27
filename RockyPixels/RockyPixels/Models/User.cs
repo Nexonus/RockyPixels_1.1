@@ -7,13 +7,13 @@ public partial class User
 {
     public int UserId { get; set; }
 
+    public string Username { get; set; } = null!;
+
+    public byte[]? Avatar { get; set; }
+
     public int RoleId { get; set; }
 
-    public string Name { get; set; } = null!;
-
-    public string Surname { get; set; } = null!;
-
-    public string? IconPath { get; set; }
-
     public virtual ICollection<Post> Posts { get; set; } = new List<Post>();
+
+    public virtual Role Role { get; set; } = null!;
 }

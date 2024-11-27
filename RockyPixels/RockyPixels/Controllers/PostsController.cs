@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using RockyPixels.Models;
 
@@ -12,7 +14,6 @@ namespace RockyPixels.Controllers
     public class PostsController : Controller
     {
         private readonly RockyPixelsBlogContext _context;
-
         public PostsController(RockyPixelsBlogContext context)
         {
             _context = context;
@@ -60,7 +61,6 @@ namespace RockyPixels.Controllers
         {
             if (ModelState.IsValid)
             {
-                
                 post.CreatedOn = DateTime.Now;
                 _context.Add(post);
                 await _context.SaveChangesAsync();
@@ -69,6 +69,8 @@ namespace RockyPixels.Controllers
             ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId", post.UserId);
             return View(post);
         }
+        
+
 
         // GET: Posts/Edit/5
         public async Task<IActionResult> Edit(int? id)
