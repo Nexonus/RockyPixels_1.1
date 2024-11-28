@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Graph;
+using Microsoft.Identity.Web;
 using RockyPixels.Models;
 
 namespace RockyPixels.Controllers
@@ -14,9 +19,17 @@ namespace RockyPixels.Controllers
     public class PostsController : Controller
     {
         private readonly RockyPixelsBlogContext _context;
-        public PostsController(RockyPixelsBlogContext context)
+        private readonly ApplicationDbContext _dbContext;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly GraphServiceClient _graphServiceClient;
+        private readonly string _connectionString;
+        public PostsController(RockyPixelsBlogContext context, IConfiguration configuration, ApplicationDbContext dbContext, IHttpContextAccessor httpContextAccessor, GraphServiceClient graphServiceClient)
         {
             _context = context;
+            _dbContext = dbContext;
+            _httpContextAccessor = httpContextAccessor;
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _graphServiceClient = graphServiceClient; ;
         }
 
         // GET: Posts
@@ -24,6 +37,8 @@ namespace RockyPixels.Controllers
         {
             var rockyPixelsBlogContext = _context.Posts.Include(p => p.User);
             return View(await rockyPixelsBlogContext.ToListAsync());
+            //var rockyPixelsBlogContext = _context.Posts.Include(p => p.User);
+            //return View(await rockyPixelsBlogContext.ToListAsync());
         }
 
         // GET: Posts/Details/5
@@ -36,7 +51,7 @@ namespace RockyPixels.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.User)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.PostId == id);
             if (post == null)
             {
                 return NotFound();
@@ -48,7 +63,6 @@ namespace RockyPixels.Controllers
         // GET: Posts/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId");
             return View();
         }
 
@@ -57,20 +71,59 @@ namespace RockyPixels.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Topic,PostContent,CreatedOn,LastModifiedOn,UserId")] Post post)
+        [AuthorizeForScopes(ScopeKeySection = "MicrosoftGraph:Scopes")]
+        public async Task<IActionResult> Create([Bind("Id,Topic,PostContent,CreatedOn,LastModifiedOn,UserId")] Models.Post post) // + IFormFile file
         {
+
+            
             if (ModelState.IsValid)
             {
+                //---------------------------------------------------------
+
+                /// THIS IS USED TO USE IDENTITY ID'S. COMMENT TO SWITCH TO AZURE.:
+                /*
+                var userId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                var userName = User.Identity.Name;
+                
+                post.UserId = userId;
+                */
+
+                /*
+                if (User.Identity?.IsAuthenticated == true)
+                {
+                    var user = await _graphServiceClient.Me.Request().GetAsync();
+                    ViewData["UserId"] = user.Id;
+                    //post.UserId = user.Id;
+                }
+                */
+
+                /// Nothing is happening here intentionally for now. Break time.
+
+
+                //post.User.UserName = User.FindFirst(ClaimTypes.NameIdentifier).Value;
                 post.CreatedOn = DateTime.Now;
                 _context.Add(post);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId", post.UserId);
+            //ViewData["UserId"] = new SelectList(_context.AspNetUsers, "UserId", "UserId", post.UserId);
             return View(post);
         }
-        
 
+        //---------------------------------------------------------
+        /*
+        private byte[] ConvertFileToByteArray(IFormFile file)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                file.CopyTo(memoryStream);
+                return memoryStream.ToArray();
+            }
+        }
+        */
+
+
+        //---------------------------------------------------------
 
         // GET: Posts/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -85,7 +138,7 @@ namespace RockyPixels.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId", post.UserId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId", post.UserId);
             return View(post);
         }
 
@@ -94,9 +147,9 @@ namespace RockyPixels.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Topic,PostContent,CreatedOn,LastModifiedOn,UserId")] Post post)
+        public async Task<IActionResult> Edit(int id, [Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,UserId")] Models.Post post)
         {
-            if (id != post.Id)
+            if (id != post.PostId)
             {
                 return NotFound();
             }
@@ -111,7 +164,7 @@ namespace RockyPixels.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PostExists(post.Id))
+                    if (!PostExists(post.PostId))
                     {
                         return NotFound();
                     }
@@ -122,7 +175,7 @@ namespace RockyPixels.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId", post.UserId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId", post.UserId);
             return View(post);
         }
 
@@ -135,8 +188,8 @@ namespace RockyPixels.Controllers
             }
 
             var post = await _context.Posts
-                .Include(p => p.User)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                //.Include(p => p.User)
+                .FirstOrDefaultAsync(m => m.PostId == id);
             if (post == null)
             {
                 return NotFound();
@@ -162,7 +215,7 @@ namespace RockyPixels.Controllers
 
         private bool PostExists(int id)
         {
-            return _context.Posts.Any(e => e.Id == id);
+            return _context.Posts.Any(e => e.PostId == id);
         }
     }
 }

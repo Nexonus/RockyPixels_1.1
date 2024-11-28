@@ -1194,3 +1194,5 @@ D:\My Computer\OneDrive\Mój Komputer\Pulpit\RockyPixels\RockyPixelsBlog\RockyPi
 D:\My Computer\OneDrive\Mój Komputer\Pulpit\RockyPixels\RockyPixelsBlog\RockyPixels\RockyPixels\obj\Debug\net8.0\RockyPixels.pdb
 D:\My Computer\OneDrive\Mój Komputer\Pulpit\RockyPixels\RockyPixelsBlog\RockyPixels\RockyPixels\obj\Debug\net8.0\RockyPixels.genruntimeconfig.cache
 D:\My Computer\OneDrive\Mój Komputer\Pulpit\RockyPixels\RockyPixelsBlog\RockyPixels\RockyPixels\obj\Debug\net8.0\ref\RockyPixels.dll
+D:\My Computer\OneDrive\Mój Komputer\Pulpit\RockyPixels\RockyPixelsBlog\RockyPixels\RockyPixels\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\My Computer\OneDrive\Mój Komputer\Pulpit\RockyPixels\RockyPixelsBlog\RockyPixels\RockyPixels\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll

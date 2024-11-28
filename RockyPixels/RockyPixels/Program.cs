@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
+using Microsoft.IdentityModel.Logging;
 using RockyPixels.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,17 +15,31 @@ var builder = WebApplication.CreateBuilder(args);
 var initialScopes = builder.Configuration["DownstreamApi:Scopes"]?.Split(' ') ?? builder.Configuration["MicrosoftGraph:Scopes"]?.Split(' ');
 
 // Add services to the container.
+
 builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
     .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"))
         .EnableTokenAcquisitionToCallDownstreamApi(initialScopes)
             .AddMicrosoftGraph(builder.Configuration.GetSection("MicrosoftGraph"))
             .AddInMemoryTokenCaches();
 
-
 builder.Services.AddDbContext<RockyPixelsBlogContext>(options => options.UseSqlServer(
               builder.Configuration.GetConnectionString("DefaultConnection"),
                options => options.CommandTimeout(3600))
            );
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+              builder.Configuration.GetConnectionString("DefaultConnection"),
+               options => options.CommandTimeout(3600))
+           );
+
+// ADD THIS SERVICE FOR ROLES! MAKE SURE ASP.NET.Identity.UI is installed!
+
+/// THIS IS USED TO USE THE IDENTITY ROLES. COMMENT FOR AZURE AUTH.:
+/*
+builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options => options.SignIn.RequireConfirmedAccount = false)
+             .AddEntityFrameworkStores<ApplicationDbContext>()
+             .AddDefaultTokenProviders()
+             .AddDefaultUI();
+*/
 
 
 builder.Services.AddControllersWithViews(options =>
@@ -49,6 +66,9 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
+    // DEBUG:
+    IdentityModelEventSource.ShowPII = true;
+    IdentityModelEventSource.LogCompleteSecurityArtifact = true;
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
@@ -67,4 +87,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
-app.Run();
+    app.Run();

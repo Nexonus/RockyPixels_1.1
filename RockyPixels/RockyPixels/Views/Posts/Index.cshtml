@@ -45,13 +45,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.LastModifiedOn)
             </td>
+            <th>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                    <!--<div>@ViewData["UserId"]</div>-->
+            </th>
             <td>
-                @Html.DisplayFor(modelItem => item.User.Username)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.PostId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PostId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PostId">Delete</a>
             </td>
         </tr>
 }

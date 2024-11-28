@@ -22,8 +22,11 @@ namespace RockyPixels.Controllers
         [AuthorizeForScopes(ScopeKeySection = "MicrosoftGraph:Scopes")]
         public async Task<IActionResult> Index()
         {
-var user = await _graphServiceClient.Me.Request().GetAsync();
-ViewData["GraphApiResult"] = user.DisplayName;
+            
+            var user = await _graphServiceClient.Me.Request().GetAsync();
+            ViewData["GraphApiResult"] = user.DisplayName;
+                        return View();
+            
             return View();
         }
 
