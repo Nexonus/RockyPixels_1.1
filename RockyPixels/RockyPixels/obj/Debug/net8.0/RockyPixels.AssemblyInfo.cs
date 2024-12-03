@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RockyPixels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0296d684cdf9ca81e76995641c9d1a53f9ba2eb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d00b22fd818ebe94e66948e547a06915e8a4c55b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RockyPixels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RockyPixels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

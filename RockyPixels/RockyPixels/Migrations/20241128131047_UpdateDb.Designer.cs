@@ -11,7 +11,6 @@ using RockyPixels.Models;
 
 namespace RockyPixels.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20241128131047_UpdateDb")]
     partial class UpdateDb
     {

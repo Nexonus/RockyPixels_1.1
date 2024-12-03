@@ -23,25 +23,36 @@
                 <input asp-for="PostContent" class="form-control" />
                 <span asp-validation-for="PostContent" class="text-danger"></span>
             </div>
-            
+            <!--
             <div class="form-group">
-                <!--<label asp-for="CreatedOn" class="control-label"></label>-->
+                <label asp-for="CreatedOn" class="control-label"></label>
+                <input asp-for="CreatedOn" class="form-control" />
+                <span asp-validation-for="CreatedOn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+            -->
+            <div class="form-group">
+                <input type="hidden" asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="hidden" asp-for="CreatedOn" class="form-control" />
-                <!--<span asp-validation-for="CreatedOn" class="text-danger"></span>-->
-                
+                <span asp-validation-for="CreatedOn" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <!--<label asp-for="LastModifiedOn" class="control-label"></label>-->
-                <input type="hidden" asp-for="LastModifiedOn" class="form-control" />
+                <input type = "hidden" asp-for="LastModifiedOn" class="form-control" />
                 <!--<span asp-validation-for="LastModifiedOn" class="text-danger"></span>-->
-                
             </div>
             <div class="form-group">
-                <!--<label asp-for="UserId" class="control-label"></label>-->
-                <input type="hidden" asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></input>
-                <!--<span asp-validation-for="UserId" class="text-danger"></span>-->
-                
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

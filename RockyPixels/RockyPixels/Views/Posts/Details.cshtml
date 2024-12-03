@@ -10,6 +10,14 @@
     <h4>Post</h4>
     <hr />
     <dl class="row">
+        <dd class="col-sm-10">
+            @{
+                var base64 = Convert.ToBase64String(Model.ImageData);
+                var Image = String.Format("data:image/gif;base64,{0}", base64);
+            }
+            <img src="@Image" alt="" class="img-fluid" style="max-width:200px;max-height:200px">
+        </dd>
+        <br />
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Topic)
         </dt>
@@ -33,6 +41,18 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.LastModifiedOn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category.CategoryName)
         </dd>
     </dl>
 </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1tTfgVMcPhcP8WrQwjq9q8MIi3LdIGlMOBWT72Ewg/I=",
+  "Hash": "G6gCXFJipNP49kwgUVEie2AVCcNsB89+SYamZs+3rQI=",
   "Source": "RockyPixels",
   "BasePath": "_content/RockyPixels",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\missing.png",
+      "SourceId": "RockyPixels",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\",
+      "BasePath": "_content/RockyPixels",
+      "RelativePath": "img/missing.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\missing.png"
     },
     {
       "Identity": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\js\\site.js",

@@ -10,41 +10,61 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Topic" class="control-label"></label>
-                <input asp-for="Topic" class="form-control" required/>
+                <input asp-for="Topic" class="form-control" />
                 <span asp-validation-for="Topic" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PostContent" class="control-label"></label>
-                <input asp-for="PostContent" class="form-control" required />
+                <input asp-for="PostContent" class="form-control" />
                 <span asp-validation-for="PostContent" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <!--<label asp-for="UserId" class="control-label"></label>-->
                 
-                <input type="hidden" asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></input>
+                <!--
+                <input type="hidden" asp-for="CreatedOn" class="form-control" />
+                -->
+                
             </div>
+            <!--
+            <div class="form-group">
+               
+                <input type="hidden" asp-for="LastModifiedOn" class="form-control" />
 
-           <!-- Try to upload image here... -->
-
-           <!-- This does not work... Connection Refused
+            </div>
+            -->
+            <!--
             <div class="form-group">
                 <label asp-for="ImageId" class="control-label"></label>
-                <input type="file" asp-for="ImageId" class="form-control" asp-items="ViewBag.ImageId"></input>
+                <select asp-for="ImageId" class ="form-control" asp-items="ViewBag.ImageId"></select>
             </div>
-             -->
+            -->
 
-           <!---->
+            <div class="form-group">
+                <input type="hidden" asp-for="Author" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId">
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input asp-for="ImageForm" type="file">
+            </div>
             <br />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
+            <br />
         </form>
     </div>
 </div>
+
 
 <div>
     <a asp-action="Index">Back to List</a>

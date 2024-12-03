@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\missing.png",
+      "PackagePath": "staticwebassets\\img\\missing.png"
+    },
+    {
       "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

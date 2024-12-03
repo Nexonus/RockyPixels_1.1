@@ -10,7 +10,6 @@ using RockyPixels.Models;
 
 namespace RockyPixels.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

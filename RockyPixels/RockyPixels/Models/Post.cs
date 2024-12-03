@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RockyPixels.Models;
 
@@ -7,17 +8,21 @@ public partial class Post
 {
     public int PostId { get; set; }
 
-    public string? Topic { get; set; }
+    public string Topic { get; set; } = null!;
 
-    public string? PostContent { get; set; }
+    public string PostContent { get; set; } = null!;
 
     public DateTime CreatedOn { get; set; }
 
     public DateTime? LastModifiedOn { get; set; }
 
-    public string? ImageId { get; set; }
+    [NotMapped]
+    public IFormFile? ImageForm { get; set; }
+    public string? Author { get; set; }
 
-    public string? UserId { get; set; }
+    public byte[]? ImageData { get; set; }
 
-    public virtual AspNetUser? User { get; set; }
+    public int? CategoryId { get; set; }
+
+    public virtual Category? Category { get; set; }
 }

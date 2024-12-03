@@ -4,6 +4,7 @@ using RockyPixels.Models;
 using System.Diagnostics;
 using Microsoft.Graph;
 using Microsoft.Identity.Web;
+using System.Data;
 
 namespace RockyPixels.Controllers
 {
@@ -24,11 +25,12 @@ namespace RockyPixels.Controllers
         {
             
             var user = await _graphServiceClient.Me.Request().GetAsync();
+            
             ViewData["GraphApiResult"] = user.DisplayName;
                         return View();
-            
             return View();
         }
+
 
         public IActionResult Privacy()
         {

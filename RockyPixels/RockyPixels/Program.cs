@@ -21,12 +21,29 @@ builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
         .EnableTokenAcquisitionToCallDownstreamApi(initialScopes)
             .AddMicrosoftGraph(builder.Configuration.GetSection("MicrosoftGraph"))
             .AddInMemoryTokenCaches();
+/*
+builder.Services.AddMicrosoftIdentityWebAppAuthentication(builder.Configuration, "AzureAd")
+    .EnableTokenAcquisitionToCallDownstreamApi(initialScopes)
+        .AddDownstreamApi("DownstreamApi", builder.Configuration.GetSection("DownstreamApi"))
+        .AddInMemoryTokenCaches();
+*/
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Administrator", policy => policy.RequireRole("blog_admin"));
+    options.AddPolicy("User", policy => policy.RequireRole("blog_user"));
+});
+
+builder.Services.AddRazorPages().AddMvcOptions(options =>
+{
+    var policy = new AuthorizationPolicyBuilder()
+                  .RequireAuthenticatedUser()
+                  .Build();
+    options.Filters.Add(new AuthorizeFilter(policy));
+}).AddMicrosoftIdentityUI();
+/// MS DOCS fragment
 
 builder.Services.AddDbContext<RockyPixelsBlogContext>(options => options.UseSqlServer(
-              builder.Configuration.GetConnectionString("DefaultConnection"),
-               options => options.CommandTimeout(3600))
-           );
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
               builder.Configuration.GetConnectionString("DefaultConnection"),
                options => options.CommandTimeout(3600))
            );
@@ -79,6 +96,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
 
@@ -86,5 +104,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+app.MapControllers();
 
     app.Run();

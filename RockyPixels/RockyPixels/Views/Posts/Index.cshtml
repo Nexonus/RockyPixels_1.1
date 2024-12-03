@@ -13,31 +13,52 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Topic)
+                @Html.DisplayNameFor(model => model.ImageData)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PostContent)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["PostIdSort"]">@Html.DisplayNameFor(model => model.PostId)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CreatedOn)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["TopicSort"]">@Html.DisplayNameFor(model => model.Topic)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LastModifiedOn)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["AuthorSort"]">@Html.DisplayNameFor(model => model.Author)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.User)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CreationDateSort"]">@Html.DisplayNameFor(model => model.CreatedOn)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["ModificationSort"]">@Html.DisplayNameFor(model => model.LastModifiedOn)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CategorySort"]">@Html.DisplayNameFor(model => model.Category)</a>
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+            <tr>
+                <td>
+                    @{
+                        var image = "";
+                        if (item.ImageData != null)
+                        {
+                            var base64 = Convert.ToBase64String(item.ImageData);
+                            image = String.Format("data:image/gif;base64,{0}", base64);
+                        }
+                    }
+                    <img src="@image" alt="" class="img-fluid" style="max-width:50px;max-height:50px">
+
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostId)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Topic)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PostContent)
+                @Html.DisplayFor(modelItem => item.Author)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CreatedOn)
@@ -45,10 +66,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.LastModifiedOn)
             </td>
-            <th>
-                    @Html.DisplayFor(modelItem => item.UserId)
-                    <!--<div>@ViewData["UserId"]</div>-->
-            </th>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.PostId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.PostId">Details</a> |
@@ -58,3 +78,6 @@
 }
     </tbody>
 </table>
+<form asp-action="DeleteAll">
+    <input type="submit" value="Delete All" class="btn btn-danger" />
+</form>
