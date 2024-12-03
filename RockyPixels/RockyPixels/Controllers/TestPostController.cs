@@ -21,7 +21,7 @@ namespace RockyPixels.Controllers
         // GET: TestPost
         public async Task<IActionResult> Index()
         {
-            var rockyPixelsBlogContext = _context.Posts.Include(p => p.Category);
+            var rockyPixelsBlogContext = _context.Posts.Include(p => p.Category).Include(p => p.Image);
             return View(await rockyPixelsBlogContext.ToListAsync());
         }
 
@@ -35,6 +35,7 @@ namespace RockyPixels.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.Category)
+                .Include(p => p.Image)
                 .FirstOrDefaultAsync(m => m.PostId == id);
             if (post == null)
             {
@@ -48,6 +49,7 @@ namespace RockyPixels.Controllers
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId");
+            ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageId");
             return View();
         }
 
@@ -56,7 +58,7 @@ namespace RockyPixels.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,Author,ImageData,CategoryId")] Post post)
+        public async Task<IActionResult> Create([Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,Author,ImageData,CategoryId,ImageId")] Post post)
         {
             if (ModelState.IsValid)
             {
@@ -65,6 +67,7 @@ namespace RockyPixels.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", post.CategoryId);
+            ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageId", post.ImageId);
             return View(post);
         }
 
@@ -82,6 +85,7 @@ namespace RockyPixels.Controllers
                 return NotFound();
             }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", post.CategoryId);
+            ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageId", post.ImageId);
             return View(post);
         }
 
@@ -90,7 +94,7 @@ namespace RockyPixels.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,Author,ImageData,CategoryId")] Post post)
+        public async Task<IActionResult> Edit(int id, [Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,Author,ImageData,CategoryId,ImageId")] Post post)
         {
             if (id != post.PostId)
             {
@@ -118,6 +122,7 @@ namespace RockyPixels.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", post.CategoryId);
+            ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageId", post.ImageId);
             return View(post);
         }
 
@@ -131,6 +136,7 @@ namespace RockyPixels.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.Category)
+                .Include(p => p.Image)
                 .FirstOrDefaultAsync(m => m.PostId == id);
             if (post == null)
             {

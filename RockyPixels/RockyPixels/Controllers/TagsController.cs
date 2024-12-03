@@ -9,22 +9,22 @@ using RockyPixels.Models;
 
 namespace RockyPixels.Controllers
 {
-    public class ImagesController : Controller
+    public class TagsController : Controller
     {
         private readonly RockyPixelsBlogContext _context;
 
-        public ImagesController(RockyPixelsBlogContext context)
+        public TagsController(RockyPixelsBlogContext context)
         {
             _context = context;
         }
 
-        // GET: Images
+        // GET: Tags
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Images.ToListAsync());
+            return View(await _context.Tags.ToListAsync());
         }
 
-        // GET: Images/Details/5
+        // GET: Tags/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,39 +32,39 @@ namespace RockyPixels.Controllers
                 return NotFound();
             }
 
-            var image = await _context.Images
-                .FirstOrDefaultAsync(m => m.ImageId == id);
-            if (image == null)
+            var tag = await _context.Tags
+                .FirstOrDefaultAsync(m => m.TagId == id);
+            if (tag == null)
             {
                 return NotFound();
             }
 
-            return View(image);
+            return View(tag);
         }
 
-        // GET: Images/Create
+        // GET: Tags/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Images/Create
+        // POST: Tags/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ImageId,ImageData")] Image image)
+        public async Task<IActionResult> Create([Bind("TagId,TagName")] Tag tag)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(image);
+                _context.Add(tag);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(image);
+            return View(tag);
         }
 
-        // GET: Images/Edit/5
+        // GET: Tags/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,22 +72,22 @@ namespace RockyPixels.Controllers
                 return NotFound();
             }
 
-            var image = await _context.Images.FindAsync(id);
-            if (image == null)
+            var tag = await _context.Tags.FindAsync(id);
+            if (tag == null)
             {
                 return NotFound();
             }
-            return View(image);
+            return View(tag);
         }
 
-        // POST: Images/Edit/5
+        // POST: Tags/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ImageId,ImageData")] Image image)
+        public async Task<IActionResult> Edit(int id, [Bind("TagId,TagName")] Tag tag)
         {
-            if (id != image.ImageId)
+            if (id != tag.TagId)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace RockyPixels.Controllers
             {
                 try
                 {
-                    _context.Update(image);
+                    _context.Update(tag);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ImageExists(image.ImageId))
+                    if (!TagExists(tag.TagId))
                     {
                         return NotFound();
                     }
@@ -112,10 +112,10 @@ namespace RockyPixels.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(image);
+            return View(tag);
         }
 
-        // GET: Images/Delete/5
+        // GET: Tags/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,42 +123,34 @@ namespace RockyPixels.Controllers
                 return NotFound();
             }
 
-            var image = await _context.Images
-                .FirstOrDefaultAsync(m => m.ImageId == id);
-            if (image == null)
+            var tag = await _context.Tags
+                .FirstOrDefaultAsync(m => m.TagId == id);
+            if (tag == null)
             {
                 return NotFound();
             }
 
-            return View(image);
+            return View(tag);
         }
 
-        // POST: Images/Delete/5
+        // POST: Tags/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var image = await _context.Images.FindAsync(id);
-            if (image != null)
+            var tag = await _context.Tags.FindAsync(id);
+            if (tag != null)
             {
-                _context.Images.Remove(image);
+                _context.Tags.Remove(tag);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> DeleteAll(int id, [Bind("ImageId, ImageData")] Models.Image image)
+        private bool TagExists(int id)
         {
-            var toDelete = _context.Images.Select(a => new Models.Image { ImageId = a.ImageId }).ToList();
-            _context.Images.RemoveRange(toDelete);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool ImageExists(int id)
-        {
-            return _context.Images.Any(e => e.ImageId == id);
+            return _context.Tags.Any(e => e.TagId == id);
         }
     }
 }

@@ -15,11 +15,15 @@ public partial class RockyPixelsBlogContext : DbContext
     {
     }
 
+    public virtual DbSet<Blog> Blogs { get; set; }
+
     public virtual DbSet<Category> Categories { get; set; }
 
     public virtual DbSet<Image> Images { get; set; }
 
     public virtual DbSet<Post> Posts { get; set; }
+
+    public virtual DbSet<Tag> Tags { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -27,6 +31,21 @@ public partial class RockyPixelsBlogContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Blog>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("Blog", "RockyPixels");
+
+            entity.HasOne(d => d.Post).WithMany()
+                .HasForeignKey(d => d.PostId)
+                .HasConstraintName("FK_Blog_Posts");
+
+            entity.HasOne(d => d.Tag).WithMany()
+                .HasForeignKey(d => d.TagId)
+                .HasConstraintName("FK_Blog_Tags");
+        });
+
         modelBuilder.Entity<Category>(entity =>
         {
             entity.HasKey(e => e.CategoryId).HasName("PK_Categories_1");
@@ -40,12 +59,9 @@ public partial class RockyPixelsBlogContext : DbContext
 
         modelBuilder.Entity<Image>(entity =>
         {
-            entity.ToTable("Images", "RockyPixels");
+            entity.HasKey(e => e.ImageId).HasName("PK_Images_1");
 
-            entity.Property(e => e.ImageId).HasColumnName("ImageID");
-            entity.Property(e => e.Metadata)
-                .HasMaxLength(500)
-                .IsUnicode(false);
+            entity.ToTable("Images", "RockyPixels");
         });
 
         modelBuilder.Entity<Post>(entity =>
@@ -70,6 +86,19 @@ public partial class RockyPixelsBlogContext : DbContext
             entity.HasOne(d => d.Category).WithMany(p => p.Posts)
                 .HasForeignKey(d => d.CategoryId)
                 .HasConstraintName("FK_Posts_Categories");
+
+            entity.HasOne(d => d.Image).WithMany(p => p.Posts)
+                .HasForeignKey(d => d.ImageId)
+                .HasConstraintName("FK_Posts_Images1");
+        });
+
+        modelBuilder.Entity<Tag>(entity =>
+        {
+            entity.ToTable("Tags", "RockyPixels");
+
+            entity.Property(e => e.TagName)
+                .HasMaxLength(100)
+                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);

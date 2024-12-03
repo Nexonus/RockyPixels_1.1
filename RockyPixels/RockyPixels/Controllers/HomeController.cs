@@ -8,7 +8,8 @@ using System.Data;
 
 namespace RockyPixels.Controllers
 {
-    [Authorize]
+    //[Authorize]
+    [Authorize(Roles = "blog_admin")]
     public class HomeController : Controller
     {
         private readonly GraphServiceClient _graphServiceClient;
@@ -19,7 +20,7 @@ namespace RockyPixels.Controllers
             _logger = logger;
             _graphServiceClient = graphServiceClient;;
         }
-
+        [Authorize(Roles = "blog_admin")]
         [AuthorizeForScopes(ScopeKeySection = "MicrosoftGraph:Scopes")]
         public async Task<IActionResult> Index()
         {

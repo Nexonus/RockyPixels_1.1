@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RockyPixels.Models;
 
@@ -8,11 +7,7 @@ public partial class Image
 {
     public int ImageId { get; set; }
 
-    public byte[]? Data { get; set; }
+    public byte[]? ImageData { get; set; }
 
-    [NotMapped]
-    public IFormFile? ImageForm { get; set; }
-    public string? Metadata { get; set; }
-
-    public int? PostId { get; set; }
+    public virtual ICollection<Post> Posts { get; set; } = new List<Post>();
 }

@@ -41,8 +41,8 @@
             <tr>
                 <td>
                     @{
-                        var image = "";
-                        if (item.ImageData != null)
+                        var image = "img/missing.png"; 
+                        if (item.ImageData != null && item.ImageId != null) // Handle NullImg as missing image
                         {
                             var base64 = Convert.ToBase64String(item.ImageData);
                             image = String.Format("data:image/gif;base64,{0}", base64);

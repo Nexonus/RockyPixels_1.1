@@ -16,13 +16,17 @@ public partial class Post
 
     public DateTime? LastModifiedOn { get; set; }
 
-    [NotMapped]
-    public IFormFile? ImageForm { get; set; }
     public string? Author { get; set; }
 
     public byte[]? ImageData { get; set; }
 
     public int? CategoryId { get; set; }
 
+    public int? ImageId { get; set; }
+
     public virtual Category? Category { get; set; }
+
+    [NotMapped]
+    public IFormFile? ImageForm { get; set; }
+    public virtual Image? Image { get; set; }
 }
