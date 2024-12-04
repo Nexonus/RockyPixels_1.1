@@ -10,23 +10,24 @@ using RockyPixels.Models;
 
 namespace RockyPixels.Controllers
 {
-    public class ImagesController : Controller
+    public class CommentsController : Controller
     {
         private readonly RockyPixelsBlogContext _context;
 
-        public ImagesController(RockyPixelsBlogContext context)
+        public CommentsController(RockyPixelsBlogContext context)
         {
             _context = context;
         }
 
-        // GET: Images
+        // GET: Comments
         [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Images.ToListAsync());
+            var rockyPixelsBlogContext = _context.Comments.Include(c => c.ParentPost);
+            return View(await rockyPixelsBlogContext.ToListAsync());
         }
 
-        // GET: Images/Details/5
+        // GET: Comments/Details/5
         [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
@@ -35,41 +36,44 @@ namespace RockyPixels.Controllers
                 return NotFound();
             }
 
-            var image = await _context.Images
-                .FirstOrDefaultAsync(m => m.ImageId == id);
-            if (image == null)
+            var comment = await _context.Comments
+                .Include(c => c.ParentPost)
+                .FirstOrDefaultAsync(m => m.CommentId == id);
+            if (comment == null)
             {
                 return NotFound();
             }
 
-            return View(image);
+            return View(comment);
         }
 
-        // GET: Images/Create
-        [Authorize(Roles = "blog_admin")]
+        // GET: Comments/Create
+        [Authorize(Roles = "blog_admin,blog_user")]
         public IActionResult Create()
         {
+            ViewData["ParentPostId"] = new SelectList(_context.Posts, "PostId", "PostId");
             return View();
         }
 
-        // POST: Images/Create
+        // POST: Comments/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "blog_admin")]
-        public async Task<IActionResult> Create([Bind("ImageId,ImageData")] Image image)
+        [Authorize(Roles = "blog_admin,blog_user")]
+        public async Task<IActionResult> Create([Bind("CommentId,CommentContent,Author,CreatedOn,ParentPostId")] Comment comment)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(image);
+                _context.Add(comment);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(image);
+            ViewData["ParentPostId"] = new SelectList(_context.Posts, "PostId", "PostId", comment.ParentPostId);
+            return View(comment);
         }
 
-        // GET: Images/Edit/5
+        // GET: Comments/Edit/5
         [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -78,23 +82,24 @@ namespace RockyPixels.Controllers
                 return NotFound();
             }
 
-            var image = await _context.Images.FindAsync(id);
-            if (image == null)
+            var comment = await _context.Comments.FindAsync(id);
+            if (comment == null)
             {
                 return NotFound();
             }
-            return View(image);
+            ViewData["ParentPostId"] = new SelectList(_context.Posts, "PostId", "PostId", comment.ParentPostId);
+            return View(comment);
         }
 
-        // POST: Images/Edit/5
+        // POST: Comments/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "blog_admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("ImageId,ImageData")] Image image)
+        public async Task<IActionResult> Edit(int id, [Bind("CommentId,CommentContent,Author,CreatedOn,ParentPostId")] Comment comment)
         {
-            if (id != image.ImageId)
+            if (id != comment.CommentId)
             {
                 return NotFound();
             }
@@ -103,12 +108,12 @@ namespace RockyPixels.Controllers
             {
                 try
                 {
-                    _context.Update(image);
+                    _context.Update(comment);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ImageExists(image.ImageId))
+                    if (!CommentExists(comment.CommentId))
                     {
                         return NotFound();
                     }
@@ -119,10 +124,11 @@ namespace RockyPixels.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(image);
+            ViewData["ParentPostId"] = new SelectList(_context.Posts, "PostId", "PostId", comment.ParentPostId);
+            return View(comment);
         }
 
-        // GET: Images/Delete/5
+        // GET: Comments/Delete/5
         [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -131,48 +137,36 @@ namespace RockyPixels.Controllers
                 return NotFound();
             }
 
-            var image = await _context.Images
-                .FirstOrDefaultAsync(m => m.ImageId == id);
-            if (image == null)
+            var comment = await _context.Comments
+                .Include(c => c.ParentPost)
+                .FirstOrDefaultAsync(m => m.CommentId == id);
+            if (comment == null)
             {
                 return NotFound();
             }
 
-            return View(image);
+            return View(comment);
         }
 
-        // POST: Images/Delete/5
+        // POST: Comments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var image = await _context.Images.FindAsync(id);
-            if (image != null)
+            var comment = await _context.Comments.FindAsync(id);
+            if (comment != null)
             {
-                _context.Database.ExecuteSql($"UPDATE RockyPixels.Posts SET ImageData = NULL WHERE ImageId = {id}");
-                _context.Database.ExecuteSql($"UPDATE RockyPixels.Posts SET ImageId = NULL WHERE ImageId = {id}");
-                _context.Images.Remove(image);
+                _context.Comments.Remove(comment);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> DeleteAll(int id, [Bind("ImageId, ImageData")] Models.Image image)
+        private bool CommentExists(int id)
         {
-            var toDelete = _context.Images.Select(a => new Models.Image { ImageId = a.ImageId }).ToList();
-            _context.Database.ExecuteSql($"UPDATE RockyPixels.Posts SET ImageData = NULL");
-            _context.Database.ExecuteSql($"UPDATE RockyPixels.Posts SET ImageId = NULL");
-            _context.Database.ExecuteSql($"DBCC CHECKIDENT ('RockyPixels.Images', RESEED, 0)");
-            _context.Images.RemoveRange(toDelete);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool ImageExists(int id)
-        {
-            return _context.Images.Any(e => e.ImageId == id);
+            return _context.Comments.Any(e => e.CommentId == id);
         }
     }
 }

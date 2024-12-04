@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Elfie.Diagnostics;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Graph;
 using Microsoft.Identity.Web;
@@ -26,7 +30,7 @@ namespace RockyPixels.Controllers
 
         // SORTED POSTS
         // GET: Posts
-
+        [Authorize]
         public async Task<IActionResult> Index(string sortOrder)
         {
             ViewData["PostIdSort"] = String.IsNullOrEmpty(sortOrder) ? "PostId_Desc" : "";
@@ -41,7 +45,11 @@ namespace RockyPixels.Controllers
 
             //posts.Include(p => p.Category);
 
-            var rockyPixelsBlogContext = _context.Posts.Include(p => p.Category).Include(p => p.Image);
+            var rockyPixelsBlogContext = _context.Posts
+                .Include(p => p.Category)
+                .Include(p => p.Image)
+                .Include(p => p.PostTags)
+                .ThenInclude(pt => pt.Tag);
             var posts = from s in rockyPixelsBlogContext
                         select s;
 
@@ -97,6 +105,7 @@ namespace RockyPixels.Controllers
         */
 
         // GET: Posts/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -106,7 +115,10 @@ namespace RockyPixels.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.Category)
+                .Include(p => p.PostTags)
+                .ThenInclude(pt => pt.Tag)
                 .Include(p => p.Image)
+                .Include(p => p.Comments)
                 .FirstOrDefaultAsync(m => m.PostId == id);
             if (post == null)
             {
@@ -116,14 +128,67 @@ namespace RockyPixels.Controllers
             return View(post);
         }
 
+        // ADD COMMENTS.: POST
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "blog_admin,blog_user")]
+        public async Task<IActionResult> AddComment(int postId, string content)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _graphServiceClient.Me.Request().GetAsync();
+
+                // Create a new Comment object
+                var comment = new Comment
+                {
+                    ParentPostId = postId,
+                    Author = user.DisplayName,
+                    CommentContent = content,
+                    CreatedOn = DateTime.Now
+                };
+
+                // Add the comment to the database
+                _context.Comments.Add(comment);
+                await _context.SaveChangesAsync();
+
+                // Redirect to the post details page (where the comments are displayed)
+                return RedirectToAction(nameof(Details), new { id = postId });
+            }
+            return RedirectToAction(nameof(Details), new { id = postId });
+        }
+
         // GET: Posts/Create
+        [Authorize(Roles = "blog_admin")]
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName");
             ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageData");
+            
+            //WIP -------------------
+            ViewData["TagId"] = new SelectList(_context.Tags, "TagId", "TagName");
+            ViewData["PostId"] = new SelectList(_context.PostTags, "PostId", "TagId"); // PostTags
 
             return View();
         }
+        [Authorize(Roles = "blog_admin")]
+        private async Task<byte[]> ReadBytesFromImageForm(Models.Post post, int MB_Limit)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                if (post.ImageForm != null)
+                {
+                    await post.ImageForm.CopyToAsync(memoryStream);
+                    if (memoryStream.Length < MB_Limit * 1000000)
+                    {
+                        var ImageData = memoryStream.ToArray();
+                        return ImageData;
+                    }
+                }
+            }
+            return null;
+        }
+        [Authorize(Roles = "blog_admin")]
         private async void UpdatePostImage(Models.Post post, Models.Image image, int MB_Limit)
         {
             using (var memoryStream = new MemoryStream())
@@ -146,6 +211,7 @@ namespace RockyPixels.Controllers
                 }
             }
         }
+        [Authorize(Roles = "blog_admin")]
         private async void UploadImageToPost(Models.Post post, int MB_Limit)
         {
             using (var memoryStream = new MemoryStream())
@@ -182,52 +248,39 @@ namespace RockyPixels.Controllers
             }
         }
 
+
         // POST: Posts/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [AuthorizeForScopes(ScopeKeySection = "MicrosoftGraph:Scopes")]
-        public async Task<IActionResult> Create([Bind("PostId,Topic,PostContent,LastModifiedOn,Author,ImageForm,ImageData,CategoryId,ImageId")] Models.Post post)
+        [Authorize(Roles = "blog_admin")]
+        public async Task<IActionResult> Create([Bind("PostId,Topic,PostContent,LastModifiedOn,Author,ImageForm,ImageData,CategoryId,ImageId")] Models.Post post, int[] selectedTags)
         {
-           
-
             if (ModelState.IsValid)
             {
-                /*
-                using (var memoryStream = new MemoryStream())
+                // Add Tags WIP
+                
+                if (selectedTags != null)
                 {
-                    if (post.ImageForm != null)
+                    foreach (var tagId in selectedTags)
                     {
-                        await post.ImageForm.CopyToAsync(memoryStream);
-
-                        // Upload the file if less than 2 MB
-                        if (memoryStream.Length < 2097152)
+                        var tag = _context.Tags.Find(tagId);
+                        if (tag != null)
                         {
-                            var file = new Models.Image()
+                            // Add the tag to the post's Tags collection
+                            var postTag = new Models.PostTag
                             {
-                                ImageData = memoryStream.ToArray()
+                                PostId = post.PostId,
+                                TagId = tag.TagId
                             };
-
-                            post.ImageData = file.ImageData;
-                            _context.Images.Add(file);
-                            await _context.SaveChangesAsync(); // Add Image to Images Model
-
-                            var item = _context.Images
-                               .OrderByDescending(p => p.ImageId)
-                               .FirstOrDefault();
-                            
-                            if (item != null)
-                            {
-                                post.Image = item;
-                            }
-                        }
-                        else
-                        {
-                            ModelState.AddModelError("File", "The file is too large.");
+                            post.PostTags.Add(postTag);
+                            //post.Tag.Add(tag);
                         }
                     }
-                }*/
+                    await _context.SaveChangesAsync();
+                }
 
                 UploadImageToPost(post, 2);
                 //--------------
@@ -242,10 +295,13 @@ namespace RockyPixels.Controllers
             }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", post.CategoryId);
             ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageData", post.ImageId);
+            // WIP ------------------------
+            ViewData["TagId"] = new SelectList(_context.Tags, "TagId", "TagName", selectedTags);
             return View(post);
         }
 
         // GET: Posts/Edit/5
+        [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -258,8 +314,11 @@ namespace RockyPixels.Controllers
             {
                 return NotFound();
             }
+
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", post.CategoryId);
             ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageData", post.ImageId);
+            ViewData["TagId"] = new SelectList(_context.Tags, "TagId", "TagName");
+            ViewData["PostId"] = new SelectList(_context.PostTags, "PostId", "TagId"); // PostTags
             return View(post);
         }
 
@@ -268,30 +327,37 @@ namespace RockyPixels.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,Author,ImageForm,ImageData,CategoryId,ImageId")] Models.Post post, [Bind("ImageId,ImageData")] Models.Image image)
+        [Authorize(Roles = "blog_admin")]
+        public async Task<IActionResult> Edit(int id, [Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,Author,ImageForm,ImageData,CategoryId,ImageId")] Models.Post post, [Bind("ImageId,ImageData")] Models.Image image, int[] selectedTags)
         {
             if (id != post.PostId)
             {
                 return NotFound();
             }
-            if (ModelState.IsValid)
+            if (post.ImageId is null)
             {
+                _context.Database.ExecuteSql($"INSERT INTO RockyPixels.Images (ImageData) VALUES (NULL)");
+                var updateImage = _context.Images
+                    .FromSql($"SELECT TOP 1 * FROM RockyPixels.Images ORDER BY ImageId DESC")
+                    .FirstOrDefault();
+                int updateImageId = 0;
+                var sourcePost = _context.Posts
+                    .FromSql($"SELECT * FROM RockyPixels.Posts WHERE PostId LIKE {id}")
+                    .FirstOrDefault();
+                if (updateImage != null)
+                {
+                    updateImageId = updateImage.ImageId;    // This is done when the ImageID in the Post has been nullified. We artificially fix it here.
+                    _context.Database.ExecuteSql($"UPDATE RockyPixels.Posts SET ImageId = {updateImageId} WHERE PostId = {id}");
+                }
+                var newData = ReadBytesFromImageForm(post, 2).Result;
                 try
                 {
-                    UpdatePostImage(post, image, 2);
-                    /*
-                    if (post.ImageId != null)
-                    {
-                        UpdatePostImage(post, image, 2);
-                    }
-                    else
-                    {
-                        UploadImageToPost(post, 2);
-                    }
-                    */
+                    //_context.Update(post);
+                    //post.ImageData = newData;
+                    //image.ImageData = newData;
+                    _context.Database.ExecuteSql($"UPDATE RockyPixels.Posts SET ImageData = {newData} WHERE PostId = {id}");
+                    _context.Database.ExecuteSql($"UPDATE RockyPixels.Images SET ImageData = {newData} WHERE ImageId = {updateImageId}");
 
-                    post.LastModifiedOn = DateTime.Now;
-                    _context.Update(post);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -307,12 +373,67 @@ namespace RockyPixels.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            else
+            {
+                if (ModelState.IsValid)
+                {
+                    
+                    try
+                    {
+                        var toDelete = await _context.PostTags.Where(pt => pt.PostId == id).ToListAsync();
+                        _context.PostTags.RemoveRange(toDelete);
+                        await _context.SaveChangesAsync();
+                        
+
+                        if (selectedTags != null)
+                        {
+                            foreach (var tagId in selectedTags)
+                            {
+                                var tag = _context.Tags.Find(tagId);
+                                if (tag != null)
+                                {
+                                    // Add the tag to the post's Tags collection
+                                    var postTag = new Models.PostTag
+                                    {
+                                        PostId = post.PostId,
+                                        TagId = tag.TagId,
+                                    };
+                                    //post.PostTags.Add(postTag);
+                                    //post.Tag.Add(tag);
+                                    await _context.Database.ExecuteSqlAsync($"INSERT INTO RockyPixels.PostTags (PostId, TagId) VALUES ({id}, {tagId})");
+                                }
+                            }
+                            await _context.SaveChangesAsync();
+                        }
+
+                        UpdatePostImage(post, image, 2);
+
+                        post.LastModifiedOn = DateTime.Now;
+                        _context.Update(post);
+                        await _context.SaveChangesAsync();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        if (!PostExists(post.PostId))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
+                    }
+                    return RedirectToAction(nameof(Index));
+                }
+            }
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", post.CategoryId);
             ViewData["ImageId"] = new SelectList(_context.Images, "ImageId", "ImageData", post.ImageId);
+            ViewData["TagId"] = new SelectList(_context.Tags, "TagId", "TagName", selectedTags);
             return View(post);
         }
 
         // GET: Posts/Delete/5
+        [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -322,6 +443,8 @@ namespace RockyPixels.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.Category)
+                .Include(p => p.PostTags)
+                .ThenInclude(pt => pt.Tag)
                 .Include(p => p.Image)
                 .FirstOrDefaultAsync(m => m.PostId == id);
             if (post == null)
@@ -335,6 +458,7 @@ namespace RockyPixels.Controllers
         // POST: Posts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
 
@@ -347,7 +471,8 @@ namespace RockyPixels.Controllers
                 if (child_image != null)
                 {
                     _context.Images.Remove(child_image);    // This ensures that DELETE CASCADE works both ways. 
-                }                                           
+                }
+                _context.Database.ExecuteSql($"DELETE FROM RockyPixels.PostTags WHERE (PostId = {id})");
                 _context.Posts.Remove(post);
             }
 
@@ -356,8 +481,10 @@ namespace RockyPixels.Controllers
         }
         [HttpPost, ActionName("DeleteAll")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "blog_admin")]
         public async Task<IActionResult> DeleteAll(int id, [Bind("PostId,Topic,PostContent,CreatedOn,LastModifiedOn,Author,ImageForm,ImageData,CategoryId,ImageId")] Models.Post post)
         {
+            _context.Database.ExecuteSql($"DELETE FROM RockyPixels.PostTags");
             var toDelete = _context.Posts.Select(a => new Models.Post { PostId = a.PostId }).ToList();
             _context.Posts.RemoveRange(toDelete);
             await _context.SaveChangesAsync();
@@ -372,6 +499,11 @@ namespace RockyPixels.Controllers
         private bool PostExists(int id)
         {
             return _context.Posts.Any(e => e.PostId == id);
+        }
+        [Authorize]
+        public IActionResult PostIndexPartial()
+        {
+            return PartialView("_PostIndexPartial", _context);
         }
     }
 }

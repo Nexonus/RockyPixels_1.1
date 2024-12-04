@@ -46,6 +46,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Comments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Comments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Comments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Comments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Comments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,8 +118,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Shared/_CommentIndexPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21tZW50SW5kZXhQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Shared/_Empty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbXB0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Shared/_PostIndexPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qb3N0SW5kZXhQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/My Computer/OneDrive/Mój Komputer/Pulpit/RockyPixels/RockyPixelsBlog/RockyPixels/RockyPixels/Views/Shared/_ValidationScriptsPartial.cshtml]

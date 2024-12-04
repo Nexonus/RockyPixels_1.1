@@ -26,7 +26,12 @@ public partial class Post
 
     public virtual Category? Category { get; set; }
 
+    public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+    public virtual Image? Image { get; set; }
+
+    public virtual ICollection<PostTag> PostTags { get; set; } = new List<PostTag>();
+
     [NotMapped]
     public IFormFile? ImageForm { get; set; }
-    public virtual Image? Image { get; set; }
 }

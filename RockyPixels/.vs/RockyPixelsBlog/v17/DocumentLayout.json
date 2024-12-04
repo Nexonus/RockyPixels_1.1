@@ -3,60 +3,20 @@
   "WorkspaceRootPath": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|d:\\my computer\\onedrive\\m\u00F3j komputer\\pulpit\\rockypixels\\rockypixelsblog\\rockypixels\\rockypixels\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|d:\\my computer\\onedrive\\m\u00F3j komputer\\pulpit\\rockypixels\\rockypixelsblog\\rockypixels\\rockypixels\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\shared\\_postindexpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\shared\\_postindexpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\images\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\images\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\rockypixelsblogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\rockypixelsblogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\images\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\images\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,32 +27,148 @@
       "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\testpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|d:\\my computer\\onedrive\\m\u00F3j komputer\\pulpit\\rockypixels\\rockypixelsblog\\rockypixels\\rockypixels\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\images\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\images\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|d:\\my computer\\onedrive\\m\u00F3j komputer\\pulpit\\rockypixels\\rockypixelsblog\\rockypixels\\rockypixels\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|d:\\my computer\\onedrive\\m\u00F3j komputer\\pulpit\\rockypixels\\rockypixelsblog\\rockypixels\\rockypixels\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|d:\\my computer\\onedrive\\m\u00F3j komputer\\pulpit\\rockypixels\\rockypixelsblog\\rockypixels\\rockypixels\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\rockypixelsblogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\rockypixelsblogcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\posttag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\posttag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\tags\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\tags\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\posttagseditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\posttagseditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\comments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\comments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\comments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\comments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\shared\\_commentindexpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\shared\\_commentindexpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\shared\\_empty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\shared\\_empty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\tags\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\tags\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\posts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\posts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\images\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\images\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\comments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\comments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\images\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\images\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\rockypixels\\views\\images\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD28947-714D-4A3D-B254-0F0F0576F673}|RockyPixels\\RockyPixels.csproj|solutionrelative:rockypixels\\views\\images\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,82 +178,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\appsettings.json",
-              "RelativeDocumentMoniker": "RockyPixels\\appsettings.json",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\appsettings.json",
-              "RelativeToolTip": "RockyPixels\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAB5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-03T21:10:09.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Edit.cshtml",
-              "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Edit.cshtml",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Edit.cshtml",
-              "RelativeToolTip": "RockyPixels\\Views\\Posts\\Edit.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAEYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T11:01:41.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Details.cshtml",
-              "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Details.cshtml",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Details.cshtml",
-              "RelativeToolTip": "RockyPixels\\Views\\Posts\\Details.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T11:01:22.807Z",
+              "Title": "TagsController.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TagsController.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\TagsController.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TagsController.cs",
+              "RelativeToolTip": "RockyPixels\\Controllers\\TagsController.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAIwAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T12:46:28.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Delete.cshtml",
-              "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Delete.cshtml",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Delete.cshtml",
-              "RelativeToolTip": "RockyPixels\\Views\\Posts\\Delete.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAANAAAA",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwBsAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T11:02:44.594Z",
+              "WhenOpened": "2024-11-26T17:19:35.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Blog.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Blog.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Models\\Blog.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Blog.cs",
-              "RelativeToolTip": "RockyPixels\\Models\\Blog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:37:58.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Index.cshtml",
               "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Index.cshtml",
               "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Index.cshtml",
               "RelativeToolTip": "RockyPixels\\Views\\Posts\\Index.cshtml",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAACwAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-03T10:41:56.576Z",
               "EditorCaption": ""
@@ -185,12 +222,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "_PostIndexPartial.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_PostIndexPartial.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Shared\\_PostIndexPartial.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_PostIndexPartial.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Shared\\_PostIndexPartial.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T10:08:26.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RockyPixels\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T12:38:26.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestPostController.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TestPostController.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\TestPostController.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TestPostController.cs",
+              "RelativeToolTip": "RockyPixels\\Controllers\\TestPostController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T15:44:12.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PostsController.cs",
               "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\PostsController.cs",
               "RelativeDocumentMoniker": "RockyPixels\\Controllers\\PostsController.cs",
               "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\PostsController.cs",
               "RelativeToolTip": "RockyPixels\\Controllers\\PostsController.cs",
-              "ViewState": "AQIAAF8BAAAAAAAAAAAkwG4BAABfAAAA",
+              "ViewState": "AQIAAOsBAAAAAAAAAAAqwOMBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T10:45:07.97Z",
               "EditorCaption": ""
@@ -198,6 +274,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\ImagesController.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "RockyPixels\\Controllers\\ImagesController.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAADwv5IAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T12:45:29.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "RockyPixels\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T12:38:28.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\CommentsController.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "RockyPixels\\Controllers\\CommentsController.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAADwv5kAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:48:52.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeDocumentMoniker": "RockyPixels\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeToolTip": "RockyPixels\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ViewState": "AQIAADsCAAAAAAAAAADwv2ACAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-04T16:28:58.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Details.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Details.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Details.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Posts\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T11:01:22.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Category.cs",
               "RelativeDocumentMoniker": "RockyPixels\\Models\\Category.cs",
@@ -210,72 +351,358 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "RockyPixels\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "RockyPixels\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-04T16:28:14.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "RockyPixels\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-04T16:27:52.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T09:23:20.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Create.cshtml",
               "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Create.cshtml",
               "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Create.cshtml",
               "RelativeToolTip": "RockyPixels\\Views\\Posts\\Create.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADgAAAA3AAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAE8AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-03T11:01:53.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Post.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Post.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Models\\Post.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Post.cs",
-              "RelativeToolTip": "RockyPixels\\Models\\Post.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAkwBgAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T10:45:06.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ImagesController.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\ImagesController.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\ImagesController.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\ImagesController.cs",
-              "RelativeToolTip": "RockyPixels\\Controllers\\ImagesController.cs",
-              "ViewState": "AQIAAJUAAAAAAAAAAAAiwKQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:45:29.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Images\\Index.cshtml",
-              "RelativeDocumentMoniker": "RockyPixels\\Views\\Images\\Index.cshtml",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Images\\Index.cshtml",
-              "RelativeToolTip": "RockyPixels\\Views\\Images\\Index.cshtml",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAADQAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T12:59:17.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "RockyPixelsBlogContext.cs",
               "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\RockyPixelsBlogContext.cs",
               "RelativeDocumentMoniker": "RockyPixels\\Models\\RockyPixelsBlogContext.cs",
               "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\RockyPixelsBlogContext.cs",
               "RelativeToolTip": "RockyPixels\\Models\\RockyPixelsBlogContext.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAApwFUAAABBAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAIwAEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T12:36:22.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Edit.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Edit.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Posts\\Edit.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T11:01:41.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PostTagsEditViewModel.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\PostTagsEditViewModel.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Models\\PostTagsEditViewModel.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\PostTagsEditViewModel.cs",
+              "RelativeToolTip": "RockyPixels\\Models\\PostTagsEditViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:32:19.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PostTag.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\PostTag.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Models\\PostTag.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\PostTag.cs",
+              "RelativeToolTip": "RockyPixels\\Models\\PostTag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:21:31.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Tags\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Tags\\Edit.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Tags\\Edit.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Tags\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T14:08:32.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Models\\Post.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Post.cs",
+              "RelativeToolTip": "RockyPixels\\Models\\Post.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wCIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:45:06.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Comments\\Index.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Comments\\Index.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Comments\\Index.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Comments\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T22:56:00.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Tag.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Models\\Tag.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Tag.cs",
+              "RelativeToolTip": "RockyPixels\\Models\\Tag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T12:37:40.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Comments\\Create.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Comments\\Create.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Comments\\Create.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Comments\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T23:17:05.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_CommentIndexPartial.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_CommentIndexPartial.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Shared\\_CommentIndexPartial.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_CommentIndexPartial.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Shared\\_CommentIndexPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T10:23:14.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Models\\Comment.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Comment.cs",
+              "RelativeToolTip": "RockyPixels\\Models\\Comment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:47:25.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T21:59:37.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Empty.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Empty.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Shared\\_Empty.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Empty.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Shared\\_Empty.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T10:08:17.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Tags\\Details.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Tags\\Details.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Tags\\Details.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Tags\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T10:07:14.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T09:23:37.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T09:23:39.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T09:23:22.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Delete.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Posts\\Delete.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Posts\\Delete.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Posts\\Delete.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T11:02:44.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Images\\Index.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Images\\Index.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Images\\Index.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Images\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAIBJwDQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T12:59:17.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Program.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Program.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Program.cs",
+              "RelativeToolTip": "RockyPixels\\Program.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAIBJwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:37:38.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Comments\\Delete.cshtml",
+              "RelativeDocumentMoniker": "RockyPixels\\Views\\Comments\\Delete.cshtml",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Comments\\Delete.cshtml",
+              "RelativeToolTip": "RockyPixels\\Views\\Comments\\Delete.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAewCMAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T23:36:44.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Image.cs",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Image.cs",
+              "RelativeDocumentMoniker": "RockyPixels\\Models\\Image.cs",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Image.cs",
+              "RelativeToolTip": "RockyPixels\\Models\\Image.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T12:37:12.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\appsettings.json",
+              "RelativeDocumentMoniker": "RockyPixels\\appsettings.json",
+              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\appsettings.json",
+              "RelativeToolTip": "RockyPixels\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-03T21:10:09.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Images\\Details.cshtml",
               "RelativeDocumentMoniker": "RockyPixels\\Views\\Images\\Details.cshtml",
@@ -288,68 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TagsController.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TagsController.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\TagsController.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TagsController.cs",
-              "RelativeToolTip": "RockyPixels\\Controllers\\TagsController.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAADwv1AAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:46:28.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TestPostController.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TestPostController.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\TestPostController.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\TestPostController.cs",
-              "RelativeToolTip": "RockyPixels\\Controllers\\TestPostController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T15:44:12.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Image.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Image.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Models\\Image.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Image.cs",
-              "RelativeToolTip": "RockyPixels\\Models\\Image.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:37:12.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "RockyPixels\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:38:26.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Program.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Program.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Program.cs",
-              "RelativeToolTip": "RockyPixels\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T13:37:38.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 41,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Images\\Delete.cshtml",
               "RelativeDocumentMoniker": "RockyPixels\\Views\\Images\\Delete.cshtml",
@@ -357,43 +723,8 @@
               "RelativeToolTip": "RockyPixels\\Views\\Images\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T13:22:16.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "RockyPixels\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:38:28.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "RockyPixels\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "RockyPixels\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAB3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T17:19:35.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Tag.cs",
-              "DocumentMoniker": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Tag.cs",
-              "RelativeDocumentMoniker": "RockyPixels\\Models\\Tag.cs",
-              "ToolTip": "D:\\My Computer\\OneDrive\\M\u00F3j Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\Models\\Tag.cs",
-              "RelativeToolTip": "RockyPixels\\Models\\Tag.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:37:40.916Z"
+              "WhenOpened": "2024-12-03T13:22:16.402Z",
+              "EditorCaption": ""
             }
           ]
         }

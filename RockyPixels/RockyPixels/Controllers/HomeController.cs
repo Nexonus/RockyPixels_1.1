@@ -8,8 +8,7 @@ using System.Data;
 
 namespace RockyPixels.Controllers
 {
-    //[Authorize]
-    [Authorize(Roles = "blog_admin")]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly GraphServiceClient _graphServiceClient;

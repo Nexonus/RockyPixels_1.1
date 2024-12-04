@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G6gCXFJipNP49kwgUVEie2AVCcNsB89+SYamZs+3rQI=",
+  "Hash": "fk7W/10SPhQZgu14O7xad+O2ODCy92/KU2on4WeYxY0=",
   "Source": "RockyPixels",
   "BasePath": "_content/RockyPixels",
   "Mode": "Default",
@@ -1233,12 +1233,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\missing.png",
+      "Identity": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\no_image.png",
       "SourceId": "RockyPixels",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\",
       "BasePath": "_content/RockyPixels",
-      "RelativePath": "img/missing.png",
+      "RelativePath": "img/no_image.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1249,7 +1249,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\missing.png"
+      "OriginalItemSpec": "wwwroot\\img\\no_image.png"
     },
     {
       "Identity": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\js\\site.js",

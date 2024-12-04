@@ -15,13 +15,15 @@ public partial class RockyPixelsBlogContext : DbContext
     {
     }
 
-    public virtual DbSet<Blog> Blogs { get; set; }
-
     public virtual DbSet<Category> Categories { get; set; }
+
+    public virtual DbSet<Comment> Comments { get; set; }
 
     public virtual DbSet<Image> Images { get; set; }
 
     public virtual DbSet<Post> Posts { get; set; }
+
+    public virtual DbSet<PostTag> PostTags { get; set; }
 
     public virtual DbSet<Tag> Tags { get; set; }
 
@@ -31,21 +33,6 @@ public partial class RockyPixelsBlogContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Blog>(entity =>
-        {
-            entity
-                .HasNoKey()
-                .ToTable("Blog", "RockyPixels");
-
-            entity.HasOne(d => d.Post).WithMany()
-                .HasForeignKey(d => d.PostId)
-                .HasConstraintName("FK_Blog_Posts");
-
-            entity.HasOne(d => d.Tag).WithMany()
-                .HasForeignKey(d => d.TagId)
-                .HasConstraintName("FK_Blog_Tags");
-        });
-
         modelBuilder.Entity<Category>(entity =>
         {
             entity.HasKey(e => e.CategoryId).HasName("PK_Categories_1");
@@ -55,6 +42,24 @@ public partial class RockyPixelsBlogContext : DbContext
             entity.Property(e => e.CategoryName)
                 .HasMaxLength(100)
                 .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Comment>(entity =>
+        {
+            entity.ToTable("Comments", "RockyPixels");
+
+            entity.Property(e => e.Author)
+                .HasMaxLength(200)
+                .IsUnicode(false);
+            entity.Property(e => e.CommentContent)
+                .HasMaxLength(1000)
+                .IsUnicode(false);
+            entity.Property(e => e.CreatedOn).HasColumnType("datetime");
+
+            entity.HasOne(d => d.ParentPost).WithMany(p => p.Comments)
+                .HasForeignKey(d => d.ParentPostId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_Comments_Posts");
         });
 
         modelBuilder.Entity<Image>(entity =>
@@ -89,7 +94,26 @@ public partial class RockyPixelsBlogContext : DbContext
 
             entity.HasOne(d => d.Image).WithMany(p => p.Posts)
                 .HasForeignKey(d => d.ImageId)
-                .HasConstraintName("FK_Posts_Images1");
+                .HasConstraintName("FK_Posts_Images");
+        });
+
+        modelBuilder.Entity<PostTag>(entity =>
+        {
+            entity.HasKey(e => new { e.PostId, e.TagId });
+
+            entity.ToTable("PostTags", "RockyPixels");
+
+            entity.Property(e => e.AlternateKey).ValueGeneratedOnAdd();
+
+            entity.HasOne(d => d.Post).WithMany(p => p.PostTags)
+                .HasForeignKey(d => d.PostId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_PostTags_Posts");
+
+            entity.HasOne(d => d.Tag).WithMany(p => p.PostTags)
+                .HasForeignKey(d => d.TagId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_PostTags_Tags");
         });
 
         modelBuilder.Entity<Tag>(entity =>

@@ -13,14 +13,14 @@
         <dd class="col-sm-10" runat="server" id="detailsImage">
             <h5>Attachment</h5>
             @{
-                var image = ""; // Null image, intentional.
+                var image = "../../img/no_image.png";
                 if (Model.ImageData != null && Model.ImageId != null) // Handle NullImg as missing image
                 {
                     var base64 = Convert.ToBase64String(Model.ImageData);
                     image = String.Format("data:image/gif;base64,{0}", base64);
                 }
             }
-            <img src="@image" alt="" class="img-fluid" style="max-width:250px;max-height:250px">
+            <img src="@image" alt="" class="img-fluid">
         </dd>
         <br />
         <dt class = "col-sm-2">
@@ -59,8 +59,44 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Category.CategoryName)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PostTags)
+        </dt>
+        <dd class="col-sm-10">
+            <ul>
+                @foreach (var postTag in Model.PostTags)
+                {
+                    <li>@postTag.Tag.TagName</li>
+                }
+            </ul>
+        </dd>
     </dl>
 </div>
+
+<h3>Comments:</h3>
+<ul>
+    @foreach (var comment in Model.Comments)
+    {
+        <li>
+            <strong>@comment.Author</strong> (@comment.CreatedOn):
+            <p>@comment.CommentContent</p>
+        </li>
+    }
+</ul>
+<hr />
+<h3>Add a Comment:</h3>
+
+<form asp-action="AddComment" asp-route-postId="@Model.PostId" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="Content">Comment</label>
+        <textarea id="Content" name="content" class="form-control" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Post Comment</button>
+</form>
+<br />
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.PostId">Edit</a> |
     <a asp-action="Index">Back to List</a>

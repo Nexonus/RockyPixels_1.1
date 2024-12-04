@@ -55,7 +55,25 @@
             <br />
             <div class="form-group">
                 <input asp-for="ImageForm" type="file">
+                <span asp-validation-for="ImageForm" class="text-danger"></span>
             </div>
+            <br />
+            
+            <div class="form-group">
+                <label>Select Tags</label><br />
+                
+                @foreach (var tag in ViewBag.TagId)
+                {
+                    <label>
+                        <input type="checkbox" name="selectedTags" value="@tag.Value" />
+                        @tag.Text
+                    </label>
+
+                    <br />
+                }
+                
+            </div>
+
             <br />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
