@@ -1,7 +1,11 @@
 ﻿@model IEnumerable<RockyPixels.Models.Post>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
+@if (User.IsInRole("blog_admin"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -38,7 +42,16 @@
             <tr>
                 <td>
                     @{
-                        var image = "img/no_image.png";
+                        var image = "";
+                        if (item.ImageData == null && item.ImageId != null)
+                        {
+                            image = "img/no_image.png";
+                        }
+                        else
+                        {
+                            image = "img/no_id.png";
+                        }
+
                         if (item.ImageData != null && item.ImageId != null) // Handle NullImg as missing image
                         {
                             var base64 = Convert.ToBase64String(item.ImageData);
@@ -69,9 +82,13 @@
                 <td>
                     @if (User.IsInRole("blog_admin"))
                     {
-                    <a asp-action="Edit" asp-route-id="@item.PostId">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@item.PostId">Delete</a>
-                    <a asp-action="Details" asp-route-id="@item.PostId">Details</a>
+                        <a asp-action="Edit" asp-route-id="@item.PostId">Edit</a><span> |</span>
+                        <a asp-action="Details" asp-route-id="@item.PostId">Details</a><span> |</span>
+                        <a asp-action="Delete" asp-route-id="@item.PostId">Delete</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Details" asp-route-id="@item.PostId">Details</a>
                     }
                 </td>
             </tr>

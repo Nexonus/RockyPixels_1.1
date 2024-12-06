@@ -58,7 +58,6 @@ builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options => option
              .AddDefaultUI();
 */
 
-
 builder.Services.AddControllersWithViews(options =>
 {
     var policy = new AuthorizationPolicyBuilder()

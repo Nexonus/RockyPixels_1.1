@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\RockyPixels.bundle.scp.css"
     },
     {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\css\\blog.css",
+      "PackagePath": "staticwebassets\\css\\blog.css"
+    },
+    {
       "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,8 +17,72 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\arrow.png",
+      "PackagePath": "staticwebassets\\img\\arrow.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\arrow.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\arrow.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\body.gif",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\body.gif"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\comment.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\comment.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\comment_hover.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\comment_hover.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\h1.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\h1.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\h1_hover.png",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\h1_hover.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\submenua.jpg",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\submenua.jpg"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\backgrounds\\submenua_normal.jpg",
+      "PackagePath": "staticwebassets\\img\\backgrounds\\submenua_normal.jpg"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\comment.png",
+      "PackagePath": "staticwebassets\\img\\comment.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\delete.png",
+      "PackagePath": "staticwebassets\\img\\delete.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\delete2.png",
+      "PackagePath": "staticwebassets\\img\\delete2.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\no_id.png",
+      "PackagePath": "staticwebassets\\img\\no_id.png"
+    },
+    {
       "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\no_image.png",
       "PackagePath": "staticwebassets\\img\\no_image.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\submit.png",
+      "PackagePath": "staticwebassets\\img\\submit.png"
+    },
+    {
+      "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\img\\submit_press.png",
+      "PackagePath": "staticwebassets\\img\\submit_press.png"
     },
     {
       "Id": "D:\\My Computer\\OneDrive\\Mój Komputer\\Pulpit\\RockyPixels\\RockyPixelsBlog\\RockyPixels\\RockyPixels\\wwwroot\\js\\site.js",

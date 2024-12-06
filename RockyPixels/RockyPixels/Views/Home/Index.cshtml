@@ -1,12 +1,187 @@
-@{
-    ViewData["Title"] = "Home Page";
-}
+@model IEnumerable<RockyPixels.Models.Post>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>@ViewData["Title"]</h1>
 
-<div>Graph API result</div>
-<div>@ViewData["GraphApiResult"]</div>
+<head>
+    <title>Mini Blog</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../css/blog.css" type="text/css" media="screen,projection" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Initially hide the logo */
+        #logo {
+            display: none;
+        }
+
+        .post {
+            display: none; /* Hide posts initially */
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <h1>
+                    <a href="#">
+                        <img src="../../img/logo.png" alt="RockyPixels Logo" class="logo">
+                    </a>
+                </h1>
+                <h2>A Simple blog about Pixels.</h2>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    // Slide the logo down after the page has loaded
+                    $('#logo').slideDown(1000); // 1000ms = 1 second
+                });
+            </script>
+        </div>
+        <div id="sidebar">
+            <h1>Some things I do</h1>
+            <ul class="submenu">
+                <li><a href="#intro">Pixelart</a></li>
+                <li><a href="#css">Computer Science</a></li>
+                <li><a href="#about">Games</a></li>
+                <li><a href="#contact">Photography</a></li>
+            </ul>
+            <br />
+            <p class="note">Feel free to play around with this site!</p>
+        </div>
+        <div id="content">
+            @foreach (var post in Model)
+            {
+                <div class="post">
+                    <h1><a href="#intro" id="intro">@post.Topic</a></h1>
+                    <h2>@Html.DisplayFor(modelItem => post.Category.CategoryName)</h2>
+                    <div class="image">
+                        @{
+                            var image = "";
+                            if (post.ImageData == null && post.ImageId != null)
+                            {
+                                image = "../../img/no_image.png";
+                            }
+                            else
+                            {
+                                image = "../../img/no_id.png";
+                            }
+                            if (post.ImageData != null && post.ImageId != null) // Handle NullImg as missing image
+                            {
+                                var base64 = Convert.ToBase64String(post.ImageData);
+                                image = String.Format("data:image/gif;base64,{0}", base64);
+                            }
+                        }
+                        <img src="@image" alt="" class="img-fluid">
+                    </div>
+                    <p>@post.PostContent</p>
+                    <div class="article_menu">
+                        <b>Posted on @post.CreatedOn.ToString("d")</b> <a href="@Url.Action("Details", "Posts", new { id = post.PostId })">
+                            @(post.Comments?.Count() ?? 0) Comments
+                        </a>
+                    </div>
+                    <p>Tags:</p>
+                    <div class="tag-list">
+                        @foreach (var postTag in post.PostTags)
+                        {
+                            <a href="@Url.Action("Index", "Posts", new { tag = postTag.Tag.TagName })" class="tag-item">
+                                @postTag.Tag.TagName
+                            </a>
+                        }
+                    </div>
+                    @if (post.Comments != null && post.Comments.Any())
+                    {
+                        @foreach (var comment in post.Comments)
+                        {
+                            <li>
+                                <div class="post @(comment.CommentId % 2 == 0 ? "comment_odd" : "comment_even")">
+                                    <b>@comment.CreatedOn.ToString("dddd, MMMM dd, yyyy hh:mm tt", new System.Globalization.CultureInfo("en-US"))</b>:
+                                    <br />
+                                    @comment.CommentContent
+                                    <br />
+                                    <div style="text-align: right;">
+                                        <b>@comment.Author</b>
+                                    </div>
+                                    
+                                    
+                                <div class="removeComment">
+                                        @if (comment.Author == ViewBag.CurrentUser || User.IsInRole("blog_admin"))
+                                        {
+                                            <form asp-controller="Posts" asp-action="DeleteComment" asp-route-commentId="@comment.CommentId" method="post" style="display:inline;">
+                                                @Html.AntiForgeryToken()  <!-- Prevent CSRF attacks -->
+                                                <button type="submit" style="background: none; border: none; padding: 0;">
+                                                    <!-- Trash icon from Font Awesome -->
+                                                    <img src="~/img/delete2.png" alt="Delete" style="width: 20px; height: 20px;" />
+                                                </button>
+                                            </form>
+                                        }
+                                </div>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <p>No comments yet.</p>
+                    }
+                    <form asp-controller="Posts" asp-action="AddComment" method="post" class="form-container">
+                        <textarea name="Content" placeholder="Write a comment..." class="pixelify-sans"></textarea>
+                        <input type="hidden" name="PostId" value="@post.PostId" />
+                        <button type="submit" class="custom-submit-btn"></button>
+                    </form>
+                </div>
+            }
+        </div>
+        <script>
+            $(document).ready(function () {
+                function checkVisibility() {
+                    // Loop through each post
+                    $('.post').each(function () {
+                        var post = $(this);
+                        var windowHeight = $(window).height();
+                        var scrollTop = $(window).scrollTop();
+                        var postOffset = post.offset().top;
+
+                        // If the post is within the viewport, animate it
+                        if (postOffset < (scrollTop + windowHeight) && !post.hasClass('visible')) {
+                            post.stop().fadeIn(1000).addClass('visible');
+                        }
+                    });
+                }
+
+                // Call the checkVisibility function on page load and scroll events
+                $(window).on('scroll', checkVisibility);
+                $(document).ready(checkVisibility); // Also check visibility on initial load
+            });
+        </script>
+        <div id="footer">
+            <p>
+                Template design by <a href="http://www.sixshootermedia.com">Six Shooter Media</a>.<br />
+                &copy; Modified by Jan Konarski.
+            </p>
+        </div>
+        <script>
+            // jQuery smooth scrolling
+            $(document).ready(function () {
+                // Smooth scroll for anchor links
+                $('a[href^="#"]').on('click', function (event) {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Get the target element (the section we are scrolling to)
+                    var target = $(this).attr('href');
+
+                    // Animate scroll to the target
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top
+                    }, 1000);  // 1000 milliseconds (1 second) scroll time
+                });
+            });
+        </script>
+    </div>
+</body>

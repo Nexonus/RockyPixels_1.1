@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Manage Images</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -30,17 +30,25 @@
                 <td>
                     @{
                         var image = "";
-                        if (item.ImageData != null)
+                        if (item.ImageData == null && item.ImageId != null)
+                        {
+                            image = "img/no_image.png";
+                        }
+                        else
+                        {
+                            image = "img/no_id.png";
+                        }
+
+                        if (item.ImageData != null && item.ImageId != null) // Handle NullImg as missing image
                         {
                             var base64 = Convert.ToBase64String(item.ImageData);
                             image = String.Format("data:image/gif;base64,{0}", base64);
                         }
                     }
-                    <img src="@image" alt="" class="img-fluid" style="max-width:50px;max-height:50px">
+                    <img src="@image" alt="" class="img-thumbnail" style="width:50px;height:50px;object-fit: cover;">
 
                 </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ImageId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ImageId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.ImageId">Delete</a>
             </td>
